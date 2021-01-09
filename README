@@ -1,0 +1,13 @@
+Heart Disease UCI
+
+We are given a dataset of 303 patients suffering or not from heart disease. We have many informations about the patients such as their age, sex, resting blood pressure, etc
+
+The aim is to predict whether a patient has a heart disease or not, while applying Machine Learning to these features.
+
+Since the output is categorical, i.e it takes only 2 values : 
+0 (no heart disease) or 1 (with heart disease)
+It is a Classification Problem
+
+We saw that patients suffering from heart disease have higher heart rates and the more the slope of the peak is high, the more are chances to have a heart disease.
+
+For the flask application, we must enter our values in the form and then we will get the predictions.

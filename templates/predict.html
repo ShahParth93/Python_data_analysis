@@ -1,0 +1,41 @@
+<html>
+
+<body bgcolor=#a3cfb4>
+
+    <center>
+
+        <h1>  PREDICTION  </h1>
+    
+    {%if data == 0%}
+    <h1>I have good news for you !</h1>  
+    <img src='static\healthy.jpg'>
+    <h1> </h1>
+    <h1> There are no signs of heart disease in you ! </h1>
+    <h1> Keep well and wear a mask </h1>  
+
+    {%else%}
+    <h1>I have bad news for you ..</h1>
+    <img src='static\unhealthy.jpg'>
+    <h1> </h1>
+    <h1> Our model shows signs of heart disease in you .. </h1>
+    <h1> Here are some tips : </h1>
+    
+      <h3>* Live Smoke-free</h3>
+      <h3>* Maintain a healthy weight</h3>
+      <h3>* Watch your cholesterol</h3>
+      <h3>* Control your blood sugar</h3>
+      <h3>* Exercise regularly</h3>  
+
+    <h1> Keep well and wear a mask </h1>  
+
+    
+    {%endif%}
+
+        <br><br>
+    <a href='/'>Click here to try again</a>
+
+    </center>
+
+</body>
+
+</html>

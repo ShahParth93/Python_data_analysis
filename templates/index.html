@@ -1,0 +1,31 @@
+{% extends 'bootstrap/base.html' %}
+
+{% block content %}
+    <html>
+        <body>
+
+            <center>
+
+            <h1> Heart Disease Predictor </h1><br>
+            
+            
+            
+            <img src='static\heartdiseasepredictor.jpeg' width="400" height="250">
+            <h1> </h1>
+            <form method="POST", action="{{url_for('home')}}">
+                <b> Do you know your Thalium stress test result :  <input type="number", name='thal', placeholder="0 to 3",min="0" ,max="3"> <br><br>
+                What is the intensity of your chest pain : <input type="number", name='cp', placeholder="0 to 3",min="0" ,max="3"> <br><br>
+                Do you remember your maximum heart rate : <input type="number", name='thalach', placeholder="70 to 200",min="70" ,max="200"> <br><br>
+                How many vessels are colored : <input type="number", name='ca', placeholder="0 to 4",min="0" ,max="4"> <br><br>
+                Enter your oldpeak :  <input type="number", name='oldpeak', placeholder="0 to 6",min="0" ,max="6"> <br><br>
+                
+                </b>
+                
+                <input type="submit" , value='Predict' >
+            </form>
+            
+        </center>
+
+        </body>
+    </html>
+{% endblock %}
